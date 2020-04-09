@@ -14,6 +14,7 @@ app.use(helmet());
 
 app.options('*', cors());
 
+/*
 app.get('/movies/:search?', async(request, response) => {
   const param = request.params;
   //response.send(limit==null );
@@ -50,10 +51,10 @@ app.get('/movies/:search?', async(request, response) => {
   }
   
 });
-
+*/
 app.get('/movies/:id', async(request, response) => {
   const res = request.params.id;
-  //const result = await mongodb.getmovie_id(res);
+  const result = await mongodb.getmovie_id(res);
   response.send(res);
 });
 
