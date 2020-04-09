@@ -12,6 +12,9 @@
     "p-settle": "^4.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "serve": "nodemon server.js"
   }
 }
