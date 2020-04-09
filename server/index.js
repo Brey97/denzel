@@ -55,7 +55,7 @@ app.get('/movies/:search?', async(request, response) => {
 app.get('/movies/:id', async(request, response) => {
   const res = request.params.id;
   const result = await mongodb.getmovie_id(res);
-  response.send(res);
+  response.send(result);
 });
 
 app.get('/movies/populate/:id', async(request, response) => {

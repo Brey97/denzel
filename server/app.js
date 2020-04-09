@@ -112,7 +112,7 @@ module.exports.getmovie_id = async (id) => {
     await client.connect();
     var result = await client.db("movies_imdb").collection("movie_review").findOne({_id:id});
     
-    //console.log(movies.length);
+    console.log(movies.length);
     
   } catch (e) { 
     console.error(e);
