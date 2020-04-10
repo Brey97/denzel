@@ -21,7 +21,7 @@ async function main() {
       
       if (e.name === 'BulkWriteError')
       {
-        console.log("Those values already exist in the database...");
+        console.log("Values already created");
       }
       else
       {
@@ -52,7 +52,7 @@ module.exports.insert = async (actor) => {
   } catch (e) { 
     if (e.name === 'BulkWriteError')
     {
-      return("Those values already exist in the database...");
+      return("Values already created");
     }
     else
     {
