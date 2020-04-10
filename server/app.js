@@ -75,8 +75,7 @@ module.exports.getrandom = async () => {
   try {      
     await client.connect();
     var result = await client.db("movies_imdb").collection("movie_review").find({"metascore":{$gt:70}});
-    
-    //console.log(movies.length);
+
     results = await result.toArray();
   } catch (e) { 
     console.error(e);
